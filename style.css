@@ -1,0 +1,400 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search {
+    border: 2px solid white;
+    color: white;
+
+}
+.search:hover {
+    background-color: white;
+    color: #000b76;
+    border: 2px solid #000b76;
+    transition: all 1s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes slides {
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes slider {
+    0% {
+        transform: translateY(70px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* header */
+#header {
+    /* background-image:  url('bg/bg1.jpeg'); */
+    background-image: linear-gradient(to right, rgba(36, 32, 32, 0.7),rgba(6, 2, 70, 0.7)), url('bg/bg1.jpeg');
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 5fr 2fr ;
+    grid-gap: 10px;
+    
+    
+    
+}
+.headingcontent {
+    text-align: center;
+    padding-top: 7%;
+    animation-name: slider;
+    animation-duration: 2s;
+    transition: 2s all ease-in;
+}
+#header h1 {
+    font-size: 5em;
+    color: white;
+    
+    /* text-align: center ; */
+}
+
+#header p {
+   font-style: italic;
+   font-size: 20px;
+   animation-name: slide;
+    animation-duration: 2s;
+    transition: 2s all ease-in;
+}
+#header h2, #header p {
+    color: white;
+}
+#header button {
+    color: #000b76;
+    background-color: white;
+    border: 2px solid #000b76;
+    padding:10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#header button:hover {
+    background-color: #000b76;
+    color: white;
+    border: 2px groove #000b76;
+    transition: ease-in 1s;
+}
+hr{
+    background-color: #000b76;
+    height: 10px; width: 20%;
+    border-radius: 100%;
+    margin-left: 590px;
+
+}
+.heading1 {
+    animation-name: slides;
+    animation-duration: 2s;
+    transition: 2s all ease-in;
+}
+
+/* about */
+.name {
+    color: #000b76;
+    font-weight: bolder;
+}
+#about {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin: 40px;
+}
+#about h1 {
+    color: #000b76;
+    font-size: 3em;
+    font-weight: 500;
+}
+#about p {
+    color: black;
+    font-size: 18px;
+}
+
+/* slide show */
+#image h1 {
+    font-size: 4em;
+    font-weight: 500;
+    background-color: #000b76;
+    width: 40%;
+    color: white;
+    border-radius: 19px 50px 4px 80px;
+}
+/* hot deals */
+#hotdeals h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 500;
+    background-color: #000b76;
+    width: 40%;
+    color: white;
+    border-radius: 9px 50px 4px 80px;
+}
+.hot {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    grid-gap: 10px;
+    padding: 30px;
+    /* background-color:#000b76;
+    color: white; */
+}
+.hot3 {
+    height: 330px;
+    width: 350px;
+}
+.hot1 {
+   height: 280px;
+    width: 350px;
+
+}
+.hot2 {
+    
+    height: 350px;
+    width: 350px;
+}
+
+.hot4 {
+    height: 480px;
+    width: 350px;
+}
+.hot5 {
+    width: 350px;
+    height: 450px;
+    
+}
+.hot6 {
+    width: 350px;
+    height: 450px;
+}
+.hot7 {
+    width: 350px;
+    height: 200px;
+}
+.hot8 {
+    width: 350px;
+    height: 340px;
+}
+.hot9 {
+    width: 350px;
+}
+.hot10 {
+    width: 350px;
+    height: 400px;
+}
+.hot11 {
+    width: 350px;
+}
+.hot12 {
+    width: 350px;
+
+}
+.shop {
+    float: right;
+    background-color: #000b76;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    transition: ease-in 1s;
+    
+}
+a.shop {
+    text-decoration: none;
+}
+.shop:hover {
+    color: #000b76;
+    background-color: white;
+    border: 1px groove #000b76;
+}
+.price {
+    margin: 10px;
+}
+del {
+    color: #000b76;
+}
+
+/* modal */ 
+.label {
+    color: white;
+    font-size: 20px;
+    
+}
+#contact {
+    background-color: #000b76;
+    color:white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.submit {
+    color: #000b76;
+    background-color: white;
+    padding: 7px;
+    font-size: 20px;
+    border: none;
+    transition: ease-in 1s;
+    border-radius: 5px;
+}
+.submit:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px groove white;
+
+}
+#footer {
+    background-color: #000b76;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 20px;
+    
+}
+
+footer {
+    background-color: #000b76;
+}
+div.foot1 li {
+    list-style-type: none;
+}
+.names {
+    font-weight: 700;
+}
+.foot2 p {
+    font-size: 25px;
+}
+.socials a {
+    font-size: 30px;
+    margin: 10px;
+}
+.contact{
+    font-size: 20px;
+}
+footer a:hover {
+    text-decoration: none;
+    color: rgb(209, 8, 159);
+}
+.copy {
+    background-color: #091583;
+    color: white;
+    text-align: center ;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* media queries */
+@media screen and (max-width: 870px) {
+    #header {
+        grid-template-columns: 2fr;
+        min-height: 50vh;
+        padding: 5px;
+    }
+    .heading1 {
+        display: none;
+    }
+    #header h1 {
+        font-size: 2em;
+    }
+    #about {
+        grid-template-columns: 3fr;
+    }
+    #image h1 {
+        font-size: 15px;
+        font-weight: 10px;
+        width: 25%;
+        padding: 5px;
+    }
+    #hotdeals h1 {
+        font-size: 15px;
+        font-weight: 10px;
+        width: 25%;
+        padding: 5px;
+    }
+    
+    .hot {
+        grid-template-columns: 2fr;
+    }
+
+    #footer {
+        grid-template-columns: 2fr;
+    }
+    .hot12, .hot11 {
+        height: 400px;
+    }
+    .hot9 {
+        height: 350px;
+    }
+    
+}
+@media screen and (max-width: 444px) {
+    #header button {
+        font-size: 10px;
+        padding: 5px;
+    }
+    #header p {
+        font-size: 10px;
+    }
+    #header h2 {
+        font-size: 15px;
+    }
+    #header {
+        min-height: 40vh;
+        padding: 5px;
+    }
+    #about p {
+        font-size: 10px;
+       
+    }
+    #about {
+        margin: 0px;
+        padding: 0px 7px 0px 7px;
+        
+    }
+    #about h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #image h1 {
+        font-size: 10px;
+        font-weight: 5px;
+
+
+    }
+    #hotdeals h1 {
+        font-size: 10px;
+        font-weight: 5px;
+    }
+    .hot12, .hot11 {
+        height: 400px;
+    }
+    .hot9 {
+        height: 350px;
+    }
+    .label {
+        font-size: 15px ;
+    }
+    input {
+        margin: 5px;
+    }
+    .hot {
+        padding: 2px;
+        grid-gap: 7px;
+    }
+   
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreDebbie Fashion House</title>
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fem.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #000b76; color: white;" >
+        <a class="navbar-brand" href="#" style="color: white;">ExploreDebbie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+          <span class="navbar-toggler-icon" style="color: rgb(4, 4, 65);"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active">
+              <a class="nav-link home"  href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link home" href="index.html#about" style="color: white;">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link home" href="#" onclick="document.getElementById('modal').style.display = 'block'" style="color: white;">Contact</a>
+              </li>
+            <li class="nav-item dropdown"id="Explore"  >
+              <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                Explore
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item drop" href="fem.html">Women's Fashion</a>
+                <a class="dropdown-item drop" href="men.html">Men's Fashion</a>
+                <a class="dropdown-item drop" href="child.html">Children's Fashion</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item drop" href="#">Place an order now!</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div id="header">
+        <div class="headingcontent">
+            <h1> <span class="name">  ExploreDebbie</span> Women Fashion House</h1>
+            <h2>Get 50% off your first order!!!</h2>
+            <p>Confuse your mirror by our trendy outfits</p>
+            <button onclick="document.getElementById('modal').style.display = 'block'">Shop Now!</button>
+            
+        </div>
+        <div class="heading1">
+          <img src="removebg/pic2.png" alt="">
+      </div>
+    </div>
+
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container">
+          <span onclick="document.getElementById('modal').style.display = 'none'" style="cursor: pointer; color: #000b76; font-size: 2em;"w3-closebtn">&times;</span>
+           <div id="contact w3-card-2" style="background-color: #000b76; padding: 15px; margin: 10px; border-radius: 10px;">
+             <h1 style="color: white;">Contact Us!</h1>
+            <form id="myForm" name="myForm" onsubmit="validate()" method="post">
+             <label class="label">Full-Name:</label>
+             <input type="text" name="name" id="name" pattern="[a-za-Z]*" required><br>
+             <label  class="label" for="">Phone-Number:</label>
+             <input type="number" name="num" min="0" pattern="[0-9]"id="num" title="Must be a number between 0 and 9" required><br>
+             <label class="label" for="">Country:</label>
+             <input type="text" name="country" id="country" pattern="[a-za-Z]*"  required> <br>
+             <label class="label" for="">Address:</label>
+             <input type="text" name="add" id="add" required> <br>
+             <label class="label">Email:</label>
+             <input type="email" name="email" id="email" required><br>
+             <label class="label" for="">Messsage</label> <br>
+             <textarea name="mess" id="mess" cols="30" rows="10" maxlength="250"></textarea>
+            
+             
+             <h4 style="color: white;">A screenshot of what you want to buy</h4>
+             <input type="file"  accept="image/*" name="image" id="file"  multiple onchange="loadFile(event)" style="display:none;"> 
+             <label for="file" class="upload" style="cursor: pointer; color: white;">Upload Image</label>
+             <p><img width= "200" id="output"></p>
+            <input type="submit" class="submit" value="Submit">
+
+              </form>
+          
+           </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- female  clothings -->
+
+       <div id="fcloth" >
+        <!--  &#128293;  -->
+          <h1 class="head">Female Shoes</h1>
+          
+            <div class="fshoes" >
+              <div class="clot1 w3-card-2" >
+                <img src="img/fshoe58.jpeg" alt="">
+                <div class="price">
+                  <span class="amount"><del>#10,000</del> <br>#7,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="clot2 w3-card-2">
+                <img src="img/fshoe29.jpeg" alt="" style="width: 350px;">
+                <div class="price">
+                  <span class="amount"><del>#15,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot3 w3-card-2">
+                <img src="img/fshoe53.jpeg" alt="" style="width: 300px; height: 300px;">
+                <div class="price">
+                  <span class="amount"><del>#17,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot4 w3-card-2">
+                <img src="img/fshoe54.jpeg" class="img-fluid" alt="" style="height: 350px; width: 350px;">
+                <div class="price">
+                  <span class="amount"><del>#13,000</del> <br>#6,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'"class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot5 w3-card-2">
+                <img src="img/fshoe47.jpeg" alt="" style="height: 350px; width: 350px;">
+                <div class="price">
+                  <span class="amount"><del>#15,000</del> <br>#7,000</span> <a href="#"onclick="document.getElementById('modal').style.display = 'block'"  class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class= "clot6 w3-card-2">
+                <img src="img/fshoe37.jpeg" alt="" style="height: 350px; width: 350px;">
+                <div class="price">
+                  <span class="amount"><del>#15,000</del> <br>#7,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot7 w3-card-2">
+                <img src="img/fshoe56.jpeg" alt="" style="width: 350px; ">
+                <div class="price">
+                  <span class="amount"><del>#19,000</del> <br>#7,000</span> <a href="#"onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot8 w3-card-2">
+                <img src="img/fshoe26.jpeg" alt="" style="width: 350px; height: 250px; ">
+                <div class="price">
+                  <span class="amount"><del>#10,000</del> <br>#2,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot9 w3-card-2">
+                <img src="img/fshoe45.jpeg" alt="" style="height: 300px;">
+                <div class="price">
+                  <span class="amount"><del>#15,000</del> <br>#8,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot10 w3-card-2">
+                <img src="img/fshoe73.png" alt="" style="height: 300px;">
+                <div class="price">
+                  <span class="amount"><del>#10,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot11 w3-card-2">
+                <img src="img/fshoe46.jpeg" alt="" style="height: 300px;">
+                <div class="price">
+                  <span class="amount"><del>#20,000</del> <br>#8,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+              <div class="clot12 w3-card-2">
+                <img src="img/fshoe59.jpeg" alt="" style="height: 300px;">
+                <div class="price">
+                  <span class="amount"><del>#13,000</del> <br>#4,500</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                </div>
+              
+              </div>
+        
+            </div>
+
+            <h1 class="head">Female Clothes</h1>
+            <div class="fshoes" >
+                <div class="fem1 w3-card-2" >
+                  <img src="img/fem12.jpeg" alt="">
+                  <div class="price">
+                    <span class="amount"><del>#10,000</del> <br>#7,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                </div>
+                <div class="fem2 w3-card-2">
+                  <img src="img/fem11.jpeg" alt="" style="width: 350px;">
+                  <div class="price">
+                    <span class="amount"><del>#15,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem3 w3-card-2">
+                  <img src="img/fem3.jpeg" alt="" style="width: 300px; height: 300px;">
+                  <div class="price">
+                    <span class="amount"><del>#17,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem4 w3-card-2">
+                  <img src="img/fem24.jpeg" class="img-fluid" alt="" style="height: 350px; width: 350px;">
+                  <div class="price">
+                    <span class="amount"><del>#13,000</del> <br>#6,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'"class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem5 w3-card-2">
+                  <img src="img/fem48.png" alt="" style="height: 350px; width: 350px;">
+                  <div class="price">
+                    <span class="amount"><del>#15,000</del> <br>#7,000</span> <a href="#"onclick="document.getElementById('modal').style.display = 'block'"  class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class= "fem6 w3-card-2">
+                  <img src="img/fem1.jpeg" alt="" style="height: 350px; width: 350px;">
+                  <div class="price">
+                    <span class="amount"><del>#15,000</del> <br>#7,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem7 w3-card-2">
+                  <img src="img/fem6.jpeg" alt="" style="width: 350px; height: 400px;">
+                  <div class="price">
+                    <span class="amount"><del>#19,000</del> <br>#7,000</span> <a href="#"onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem8 w3-card-2">
+                  <img src="img/fem20.jpeg" alt="" style="width: 350px; height: 250px; ">
+                  <div class="price">
+                    <span class="amount"><del>#10,000</del> <br>#2,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem9 w3-card-2">
+                  <img src="img/fem7.jpeg" alt="" style="height: 300px;">
+                  <div class="price">
+                    <span class="amount"><del>#15,000</del> <br>#8,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem10 w3-card-2">
+                  <img src="img/fem33.jpeg" alt="" style="height: 300px;">
+                  <div class="price">
+                    <span class="amount"><del>#10,000</del> <br>#5,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem11 w3-card-2">
+                  <img src="img/fem35.jpeg" alt="" style="height: 300px;">
+                  <div class="price">
+                    <span class="amount"><del>#20,000</del> <br>#8,000</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+                <div class="fem12 w3-card-2">
+                  <img src="img/fem45.jpeg" alt="" style="height: 300px;">
+                  <div class="price">
+                    <span class="amount"><del>#13,000</del> <br>#4,500</span> <a href="#" onclick="document.getElementById('modal').style.display = 'block'" class="shop">Shop now!<i class="fas fa-cart-plus"></i></a>
+                  </div>
+                
+                </div>
+          
+              </div>
+
+               <!-- footer -->
+               <footer>
+                <div id="footer">
+                  <div class="foot1">
+                    <h3> <span class="names">ExploreDebbie</span> Online Fashion Store</h3>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" onclick="document.getElementById('modal').style.display = 'block'">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Explore">Explore</a></li>
+                    <li><a href="#hotdeals">Hot Deals</a></li>
+                  </div>
+                  <div class="foot2">
+                    <a class="contact" href="">Contact us</a>
+                    <p>Or reach out to us through our social media handles <br>
+                      <span class="socials">
+                        <a href="https://bit.ly/Debbyfb" target="_blank"> <i class="fab fa-facebook-square"></i></a>
+                        <a href="https://bit.ly/TwitterDebby" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+                        <a href="https://bit.ly/debbyInsta" target="_blank"> <i class="fab fa-instagram"></i></a>
+                      </span>
+                     
+                    </p>
+                    </div>
+                    <div class="foot3">
+                      <li><a href="fem.html">Women Fashion</a>
+        
+                      </li>
+                      <li><a href="child.html">Children Fashion</a></li>
+                      <li><a href="men.html">Men Fashion</a></li>
+                      <li><a href="#" onclick="document.getElementById('modal').style.display = 'block'">Shop Now!</a></li>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
+                    </div>
+                    
+                  
+                </div>
+                <p class="copy"> &copy; Copyright 2020 ExploreDebbie - Designed By Okonu_Deborah</p>
+              </footer>
+
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
